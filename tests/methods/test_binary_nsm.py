@@ -134,11 +134,11 @@ def bin_nsm_lbm(request):
         (Hypothesis.P0LessThanP1, eval_clean_litter[:, 0], eval_clean_litter[:, 1], 49.5),
         (Hypothesis.P0MoreThanP1, eval_clean_litter[:, 0], eval_clean_litter[:, 1], 49.5),
         (Hypothesis.P0LessThanP1, eval_clear_counter[:, 0], eval_clear_counter[:, 1], 49.5),
-        (Hypothesis.P0MoreThanP1, eval_clear_counter[:, 0], eval_clear_counter[:, 1], 38),
+        (Hypothesis.P0MoreThanP1, eval_clear_counter[:, 0], eval_clear_counter[:, 1], 25),
         (Hypothesis.P0LessThanP1, eval_slice_apple[:, 0], eval_slice_apple[:, 1], 49.5),
         (Hypothesis.P0MoreThanP1, eval_slice_apple[:, 0], eval_slice_apple[:, 1], 49.5),
         (Hypothesis.P0LessThanP1, eval_set_table[:, 0], eval_set_table[:, 1], 49.5),
-        (Hypothesis.P0MoreThanP1, eval_set_table[:, 0], eval_set_table[:, 1], 5),
+        (Hypothesis.P0MoreThanP1, eval_set_table[:, 0], eval_set_table[:, 1], 17),
         # fmt: on
     ],
     indirect=["bin_nsm_lbm"],

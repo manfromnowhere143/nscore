@@ -115,7 +115,11 @@ class BernoulliNsmTest(SequentialTestBase):
             delta = self._estimated_p_0 - self._estimated_p_1
         
         if delta > 0.:
-            self.lambda_parameter = delta / (delta + 2.*self._estimated_p_0*(1-self._estimated_p_0-delta))
+            discordance = (
+                self._estimated_p_0 * (1. - self._estimated_p_1)
+                + self._estimated_p_1 * (1. - self._estimated_p_0)
+            )
+            self.lambda_parameter = delta / discordance
         else:
             self.lambda_parameter = 0.
         
